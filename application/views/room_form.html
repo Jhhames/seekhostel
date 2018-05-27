@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=<?=  base_url("assets/boot/bootstrap.min.css") ?>>
+    <link rel="stylesheet" href=<?= base_url("assets/font-awesome-4.7.0/css/font-awesome.min.css") ?>>
+    <link rel="stylesheet" href=<?= base_url("assets/main.css") ?>>
+    <title>room-mates</title>
+</head>
+<body>
+<div class="content">
+    <header>
+        <div>
+            <div class="nav">
+                <h2 style="padding-left: 20px"><a href=<?= base_url() ?>>H<span style="font-size: 50px;">ooo</span>MIES <i
+                        class="fa fa-home"></i></a></h2>
+                <nav>
+                    <ul type="none">
+                        <li><a href="#" class="fa fa-envelope  fa-envelope-open"></a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li><a href="room_form.html">Rent out a room/ Room mates</a></li>
+                        <li>
+                            <button style="border-radius: 10px"
+                                    onclick="document.getElementById('id01').style.display='block'">Log in
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="room_form">
+        <h3>Lets get started</h3><br>
+        <h4><b>Tell us about your place</b></h4>
+        <form action="">
+            <label for="need"></label>
+            <select name="need">
+                <option value="" disabled selected style="display: none; color: #6c757d ">location <i
+                        class=" fa fa-arrow-down"></i></option>
+                <option>Ibadan</option>
+                <option>Mayfair</option>
+                <option>Ibadan-road</option>
+                <option>Others</option>
+            </select>
+        </form>
+        <form action="" >
+            <label for="need"></label>
+            <select name="need">
+                <option value="" disabled selected style="display: none; color: #6c757d ">House type <i
+                        class="fa fa-arrow-down"></i>
+                </option>
+                <option>Hostel</option>
+                <option>Self contain</option>
+                <option>Single room</option>
+                <option>Flat</option>
+            </select>
+        </form>
+        <form>
+            <input type="number" placeholder="price" style="border-radius: 5px;">
+        </form>
+        <form action="need" >
+            <label for="need"></label>
+            <select name="need" style="max-width: 250px">
+                <option value="" disabled selected style="display: none; color: #6c757d ">What do you need
+                </option>
+                <option value="0">I want to rent out a room</option>
+                <option value="1">I need a room mate</option>
+            </select>
+        </form>
+
+    </div>
+
+
+    <div style="padding-top: 200px">
+        <label for="photo">Upload Images:</label>
+        <input type="file" multiple>
+    </div>
+    <div>
+        <form action="">
+            <h5 style="padding-top:40px;"><label for="">Description:</label></h5>
+            <textarea name="" id="" cols="30" rows="3" placeholder=""></textarea>
+        </form>
+    </div>
+</div>
+</body>
+</html>
